@@ -1,0 +1,23 @@
+<div class="container">
+        {{#each students}}
+        <div class="row">
+            <div class="col-md-3">Name: {{name}}</div>
+            <div class="col-md-3">Last Name: {{lname}}</div>
+            <div class="col-md-3">Password: {{password}}</div>
+            <div class="col-md-3">Email: {{email}}</div>
+           
+
+      
+            <div class=" col-md-3">
+                <a href="/edit?email={{email}}" class="btn btn-primary">Edit {{name}}</a>
+            </div>
+            <div class=" col-md-3">
+                <a href="/delete?email={{email}}" class="btn btn-primary">Delete</a>
+            </div>
+        </div> 
+        </br>
+        
+           
+        {{/each}}
+    
+</div>

@@ -1,0 +1,23 @@
+<div class="form" id="Form">
+  <form method="post" action="/customer/edit" class="form-container" >
+    <h1>Edit Student</h1>
+  
+    
+    <label for="name"><b>First name</b></label>
+    <input type="text" placeholder="Enter First name" name="name" value="{{data.name}}" />
+
+ <label for="lname"><b>First name</b></label>
+    <input type="text" placeholder="Enter Last name" name="lname" value="{{data.lname}}"/>
+
+ 
+    </div>                             
+ <input type="hidden" id="email" name="email" value="{{data.email}}"  />
+</div>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" value="{{data.password}}" />
+
+    <button type="submit" class="btn btn-primary pull-right" value="Edit Person">Edit Person</button>
+    
+  </form>
+</div>

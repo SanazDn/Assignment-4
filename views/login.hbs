@@ -1,0 +1,42 @@
+
+<button class="open-button" onclick="openForm()">Login Form</button>
+
+<div class="form-popup" id="myForm">
+  <form  method="post" action="/login" class="form-container">
+    <h1>Login</h1>
+   
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit" class="btn" value="Submit">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()" >Close</button>
+  </form>
+</div>
+<script>
+
+
+
+
+function openForm1() {
+  document.getElementById("Form").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("Form").style.display = "none";
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+

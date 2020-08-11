@@ -1,0 +1,46 @@
+<p class="example-01"style="color:groove;">
+        <header>
+        <h1>No cooking, just eating.</h1>
+        </header>
+
+
+ <div class="row">
+  <div class="column">
+    <img src="/photos/Pick.gif" alt="Snow"  style="width:80%">
+    <figcaption><h3>Pick</h3>100+ menu of all-natural dishes.</figcaption>
+  </div>
+  <div class="column">
+    <img src="/photos/heat.gif" alt="Forest" style="width:80%">
+    <figcaption><h3>Heat</h3>Cooked and delivered.</figcaption>
+  </div>
+  <div class="column">
+    <img src="/photos/eat.gif" alt="Mountains" style="width:80%">
+    <figcaption><h3>Eat</h3>Delicious and nutritious.</figcaption>
+  </div>
+   <div class="column">
+    <img src="/photos/repeat.gif" alt="Mountains" style="width:80%">
+     <figcaption><h3>Repeat</h3>Skip a week or cancel any time.</figcaption>
+  </div>
+</div>   
+
+<br><br>
+ <h2>Our chefs are making these right now!</h2>
+ <p>You could be chowing down on any of these meals any time you choose - seriously!<br>
+Order some (or all) of these meals and see why thousands of Canadians stock us in their fridge!</p>
+
+<br><br>
+<div class = "row">
+{{#each data }}
+
+<div class = "column">
+    <img src="/img/{{this.imgPath}}" style="width:100%" >
+    <figcaption><h3>Title : {{this.title}}</h3>Price : {{this.price}}</figcaption>
+</div>
+
+
+{{/each}}
+</div>
+<br><br><br><br>
+
+
+

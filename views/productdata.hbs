@@ -1,0 +1,34 @@
+
+<div class="container">
+{{#each products }}
+
+ <div class="row">
+   <div class="col-md-3">
+                <img class="img-fluid" src="/photos/{{img}}" alt="Image for {{name}}"> 
+            </div> 
+            <div class="col-md-3">Title: {{title}}</div>
+            <div class="col-md-3">Price: {{price}}</div>
+            <div class="col-md-3">Number of meals: {{number}}</div>
+            <div class="col-md-3">Description: {{description}}</div>
+           <div class="col-md-3">Food catagory: {{catagory}}</div>
+
+            {{#if topmeal}}
+                <div class="col-md-2">This Student is Top Meal</div>
+            {{else}}
+                <div class="col-md-2">This Student is not Top Meal</div>
+            {{/if}}
+ 
+      
+          <div class=" col-md-3">
+                <a href="/editm?title={{title}}" class="btn btn-primary">Edit {{title}}</a>
+            </div>
+            <div class=" col-md-3">
+                <a href="/deletem?title={{title}}" class="btn btn-primary">Delete</a>
+            </div> 
+        </div> 
+        </br>
+        
+        {{/each}}
+    
+</div>
+

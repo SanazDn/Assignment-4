@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>{{title}}</title>
+   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  
+  
+</head>
+<body>
+  <div class="container">
+      <header>
+         
+        <h2>Free delivery for orders over $200! </h2>
+        <nav>
+		  <ul>	  
+			<li><a class="one" href="/">Home</a></li>
+			<li><a class="one" href="/product">Meals Package Page</a></li>
+		
+			<li><a class="one" href="/customer">Customer Registration</a>
+      <li><a class="one" href="/login">login</a>
+       {{#if users }}
+      <li><a href="/logout" class="one">Log out</a></li>
+      {{else}}
+      <li><a href="/login" class="one">Admin</a></li>
+      {{/if}}
+           
+            </li>
+		  </ul>
+        </nav>
+      </header>
+	  <main>
+
+		  {{{body}}}
+
+      </main>
+      
+
+       
+      <footer>
+
+        <ul>
+          <li><a class="o" href="/contact-us">CONTACT US</a></li>
+        </ul>
+		<section>
+
+      <h5>Our Menu</h5>Meal Packages
+      <br>Individual Meals
+		</section>
+    © 2020 LiveFit North America Inc.
+      </footer>
+    </div>
+
+

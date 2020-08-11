@@ -1,0 +1,19 @@
+
+    <img src="/photos/mealpage.jpeg" alt="Snow" style="width:100%;">
+    <p>Pick a package, choose your meals, achieve your goal - it's that easy!</p>
+
+    <div class = "row">
+{{#each products }}
+
+<div class = "column">
+    <form method="post" action="/product/add" class="form-container" ></form>
+    <img src="/photos/{{this.imgPath}}" style="width:100%" >
+    <figcaption><h3>Title : {{this.title}}</h3>Number of meals : {{this.number}}<br>Price : {{this.price}}<br>{{this.description}}</figcaption>
+    
+    <a class="one" href="/product/add">Add</a>
+</div>
+
+
+
+{{/each}}
+</div>

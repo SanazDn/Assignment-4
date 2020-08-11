@@ -1,0 +1,44 @@
+
+
+<div class="form" id="Form">
+  <form method="post" action="/productedit/edit" class="form-container" enctype="multipart/form-data" >
+    <h1>Add Meal</h1>
+  
+    
+  <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter First title" name="title" value="{{data.title}}" >
+
+ <label for="number"><b>Number of meals</b></label>
+    <input type="text" placeholder="Enter  number" name="number" value="{{data.number}}">
+
+    <label for="price"><b>Price</b></label>
+    <input type="text" placeholder="Enter price" name="price" value="{{data.price}}">
+
+    <label for="description"><b>Description</b></label>
+    <input type="text" placeholder="Enter description" name="description" value="{{data.description}}">
+
+      <label for="catagory"><b>Food catagory</b></label>
+    <input type="text" placeholder="Enter catagory" name="catagory" value="{{data.catagory}}">
+
+    <label for="photo">Photo ID</label>
+    <input id="photo" type="file" name="photo" value="{{data.photo}}"/><br /> 
+                        
+  
+   <label for="topmeal">Top meal:</label>
+  {{#if data.topmeal}}
+ <input  type="checkbox"  name="topmeal" checked/>
+ {{else}}
+ <input type="checkbox"  name="topmeal"/>
+{{/if}}                              
+                   
+
+   
+
+    
+    <button type="submit" class="btn btn-primary pull-right" value="Edit Person">Edit </button>
+    
+  </form>
+</div>
+
+
+

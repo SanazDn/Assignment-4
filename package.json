@@ -1,0 +1,27 @@
+{
+  "name": "week2stuff",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.16.3"
+  },
+  "description": "code for week 2",
+  "main": "Test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan M",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.2",
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "client-sessions": "^0.8.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "git": "^0.1.5",
+    "mongoose": "^5.9.27",
+    "multer": "^1.4.2"
+  }
+}
