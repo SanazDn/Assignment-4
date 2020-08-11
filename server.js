@@ -1,3 +1,4 @@
+// admin email: test@user.com //password: 1234//
 const express = require("express");  
 const app = express();  
 const path = require("path");
