@@ -112,7 +112,7 @@ app.get("/logout",(req,res)=>{
 });
 
 
-app.get("/customer",ensureLogin,ensureAdmin,(req,res)=>{
+app.get("/customer",(req,res)=>{
   res.render("register");
 });
 
